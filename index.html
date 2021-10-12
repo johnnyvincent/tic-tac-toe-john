@@ -17,7 +17,7 @@
         <form id="sign-up" class="border">
                 <fieldset>
                   <legend>Sign Up</legend>
-                  <input type="email" name="credentials[email]" placeholder="Email" required>
+                  <input type="text" name="credentials[email]" placeholder="Email" required>
                   <input type="password" name="credentials[password]" placeholder="Password" required>
                   <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
                   <button class="btn btn-primary">Sign Up</button>
@@ -26,7 +26,7 @@
         <form id="sign-in" class="border">
           <fieldset>
             <legend>Sign In</legend>
-            <input type="email" name="credentials[email]" placeholder="Email" required>
+            <input name="credentials[email]" type="text" placeholder="Email" required>
             <input type="password" name="credentials[password]" placeholder="Password" required>
             <button class="btn btn-primary">Sign In</button>
           </fieldset>
@@ -51,12 +51,28 @@
           <div class="col-4 col-sm-4 col-lg-12 box alt-color" id="box9"></div>
 
       </div>
-      </div>
+
       <section id="result-display">
         Result display
       </section>
       <section>Error Display</section>
 
       <button id="new-game">New Game</button>
+
+      <form id="sign-out" class="border">
+        <fieldset>
+          <legend>Sign Out</legend>
+
+          <button class="btn btn-primary">Sign Out</button>
+        </fieldset>
+      </form>
+      </div>
+
+      <section>
+        <div id="error-message"></div>
+        <div id="game-display"></div>
+      </section>
+
+
     </body>
 </html>
