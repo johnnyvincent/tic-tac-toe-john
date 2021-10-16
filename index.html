@@ -20,7 +20,7 @@
                   <input type="text" name="credentials[email]" placeholder="Email" required>
                   <input type="password" name="credentials[password]" placeholder="Password" required>
                   <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
-                  <button class="btn btn-primary">Sign Up</button>
+                  <button class="button">Sign Up</button>
                 </fieldset>
         </form>
         <form id="sign-in" class="border">
@@ -28,7 +28,7 @@
             <legend>Sign In</legend>
             <input name="credentials[email]" type="text" placeholder="Email" required>
             <input type="password" name="credentials[password]" placeholder="Password" required>
-            <button class="btn btn-primary">Sign In</button>
+            <button class="button">Sign In</button>
           </fieldset>
         </form>
         </section>
@@ -41,48 +41,31 @@
       <div class="container" id="after-sign-in">
 
           <!--Element which informs players' whose turn it is-->
-          <p>Player <span id="player-turn">X</span> it is your turn</p>
+          <p id="game-display"> Game Display </p>
+
           <div id="game-board">
-
-
             <div data-cell-index="0" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="1" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="2" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
-
-
             <div data-cell-index="3" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="4" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="5" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
-
-
             <div data-cell-index="6" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="7" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
             <div data-cell-index="8" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+          </div>
 
 
-      </div>
+      <section id="error-display"></section>
 
-      <section id="result-display">
-        Result display
-      </section>
-      <section id="error-display">Error Display</section>
-
-      <button id="new-game">New Game</button>
+      <button id="new-game" class="button">New Game</button>
 
       <form id="sign-out" class="border">
         <fieldset>
-          <legend>Sign Out</legend>
-
-          <button class="btn btn-primary">Sign Out</button>
+          <button class="button">Sign Out</button>
         </fieldset>
       </form>
       </div>
-
-      <section>
-        <div id="error-message"></div>
-        <div id="game-display">Player<span id="winner"></span>Wins</div>
-      </section>
-
 
     </body>
 </html>

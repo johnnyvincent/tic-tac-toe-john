@@ -2,7 +2,6 @@
 
 const config = require('../config')
 const store = require('../store')
-const game = require('../game/game')
 
 const signUp = function (formData) {
   return $.ajax({
@@ -30,17 +29,8 @@ const signOut = function () {
   })
 }
 
-const newGame = function () {
-  return $.ajax({
-    url: `${game.apiUrl}/new-game`,
-    method: 'POST'
-
-  })
-}
-
 module.exports = {
   signUp,
   signIn,
-  signOut,
-  newGame
+  signOut
 }
