@@ -7,7 +7,7 @@ const api = require('./api')
 
 
 const newGameSuccess = function () {
- document.getElementById('game-display').innerText = 'Player X, it is your turn. Good Luck!'
+ // document.getElementById('game-display').innerText = 'Player X, it is your turn. Good Luck!'
 }
 const selectSpaceSuccess = function () {
 

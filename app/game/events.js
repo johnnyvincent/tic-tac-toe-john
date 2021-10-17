@@ -41,7 +41,9 @@ const onNewGame = function onNewGame (event) {
   turn = 0
   gameIsOver = false
   $('#game-board').show(400)
-  // api.newGame()
+  document.getElementById('game-display').innerText = 'Player X, it is your turn. Good Luck!'
+  //api
+  //  .newGame()
   //  .then(ui.NewGameSuccess)
   //  .catch(ui.NewGameFailure)
 }

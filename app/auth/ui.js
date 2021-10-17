@@ -25,8 +25,8 @@ const signUpFailure = function (error) {
 const signInSuccess = function (responseData) {
   store.user = responseData.user
   console.log('store is', store)
-  $('#game-display').text('Signed in successfully!')
-
+  $('#sign-in-success').text('Signed in successfully!').fadeOut(3000)
+  $('#game-board').hide()
  // $('#game-display').removeClass()
  // $('#game-display').addClass('text-success')
 
