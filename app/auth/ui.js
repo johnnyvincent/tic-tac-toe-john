@@ -5,8 +5,8 @@ const store = require('../store')
 const signUpSuccess = function (responseData) {
   $('#game-display').text('Signed up successfully!')
 
-  $('#game-display').removeClass()
-  $('#game-display').addClass('text-success')
+  // $('#game-display').removeClass()
+  // $('#game-display').addClass('text-success')
 
   $('form').trigger('reset')
 
@@ -27,8 +27,8 @@ const signInSuccess = function (responseData) {
   console.log('store is', store)
   $('#game-display').text('Signed in successfully!')
 
-  $('#game-display').removeClass()
-  $('#game-display').addClass('text-success')
+ // $('#game-display').removeClass()
+ // $('#game-display').addClass('text-success')
 
   $('form').trigger('reset')
 
@@ -50,8 +50,8 @@ const signInFailure = function (error) {
 const signOutSuccess = function (responseData) {
   $('#game-display').text('Signed out successfully!')
 
-  $('#game-display').removeClass()
-  $('#game-display').addClass('text-success')
+ // $('#game-display').removeClass()
+ // $('#game-display').addClass('text-success')
   $('#form').trigger('reset')
 
   $('#after-sign-in').hide()

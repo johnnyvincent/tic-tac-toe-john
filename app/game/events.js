@@ -75,7 +75,7 @@ const idWinner = function () {
     const pauseBoardWhenGameEnds = function () {
       if (gameIsOver) {
         $('#game-board').hide(400)
-        document.getElementById('game-display').innerText = 'Click New Game to play again!'
+        document.getElementById('new-game-display').innerText = 'Click New Game to play again!'
       }
     }
 

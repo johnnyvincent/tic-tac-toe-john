@@ -3,7 +3,7 @@
 
 
 body {
-  background-color: #caffbf;
+  background-color: #a8dadc;
 }
 
 .container {
@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 #sign-up {
   display: flex;
@@ -30,11 +31,10 @@ display: flex;
 flex-wrap: wrap;
 width: 450px;
 margin: 10px auto;
+background-color: #f1faee
 }
 
 .box {
-
-  background-color: #ffadad;
   width: 150px;
   height: 150px;
   font-size: 140px;
@@ -48,8 +48,8 @@ margin: 10px auto;
 
 h1, h2 {
 text-align: center;
-color: #a0c4ff;
-font-size: 50px;
+color: #1d3557;
+font-size: 100px;
 text-shadow: -1px 1px 0 #000,
 1px 1px 0 #000,
 1px -1px 0 #000;
@@ -57,7 +57,7 @@ text-shadow: -1px 1px 0 #000,
 }
 
 .alt-color {
-  background-color: #a0c4ff;
+  background-color: #1d3557;
 }
 
  #new-game {
@@ -66,7 +66,7 @@ text-shadow: -1px 1px 0 #000,
    align-items: center;
    width: 100px;
    height: 50px;
-   background-color: #bdb2ff;
+   background-color: #457b9d;
    color: white;
     }
  #after-sign-in {
@@ -82,17 +82,27 @@ p {
   text-align: center;
 
 }
-#result-display, #error-display {
+#new-game-display {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 60px;
 }
+
+#game-display {
+font-size: 60px;
+color: black;
+}
+
 #sign-out {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #bdb2ff;
+  width: 100px;
+  height: 50px;
+  background-color: #457b9d;
+  color: white;
 }
 .button {
-  background-color: #ffc6ff;
+  background-color: #f1faee;
 }
