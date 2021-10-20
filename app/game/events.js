@@ -102,7 +102,10 @@ const onSelectSpace = function (event) {
       turn++
       // run function to check for winner after each turn
       idWinner()
+      // check to see if it is tie game
+      tieGame()
       // run function that will hide game board if game is over
+
       pauseBoardWhenGameEnds()
       api
         .selectSpace()
