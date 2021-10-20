@@ -10,17 +10,16 @@ const newGame = function () {
     headers: { Authorization: 'Bearer ' + store.user.token }
   })
 }
-const selectSpace = function (cellIndex, gameIsOver) {
-  console.log('index = ' + cellIndex + ' gameIsOver = ' + gameIsOver)
+const updateGame = function (i, value, gameIsOver) {
   return $.ajax({
-    url: `${config.apiUrl} + /games/` + store.game._id,
+    url: `${config.apiUrl} + /games/` + store.user._id,
     method: 'PATCH',
     headers: { Authorization: 'Bearer ' + store.user.token },
     data: {
       game: {
         cell: {
-          index: cellIndex,
-          value: store.game.player
+          index: i,
+          value: value
         },
         over: gameIsOver
       }
@@ -30,5 +29,5 @@ const selectSpace = function (cellIndex, gameIsOver) {
 
 module.exports = {
   newGame,
-  selectSpace
+  updateGame
 }

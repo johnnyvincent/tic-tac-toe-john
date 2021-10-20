@@ -1,8 +1,8 @@
 'use strict'
-const store = require('../store')
+// const store = require('../store')
 
-const events = require('./events')
-const api = require('./api')
+// const events = require('./events')
+// const api = require('./api')
 
 const newGameSuccess = function () {
   document.getElementById('game-display').innerText = 'Player X, it is your turn. Good Luck!'

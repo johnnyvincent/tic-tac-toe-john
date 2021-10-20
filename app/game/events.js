@@ -19,7 +19,7 @@ const boxes = document.querySelectorAll('.box')
 // variable to represent the game display for game messages
 // const gameStatusDisplay = document.querySelector('#game-display')
 // variable to store the array of boxes
-// const gameBoardArray = ['', '', '', '', '', '', '', '', '']
+const gameBoardArray = ['', '', '', '', '', '', '', '', '']
 // let cellIndex = data-cell-index
 const boxesArray = []
 // element to store all combinations that can win the game
@@ -38,6 +38,7 @@ const onNewGame = function onNewGame (event) {
   event.preventDefault()
   $('.box').text('')
   winningPlayer = ''
+  player = 'X'
   turn = 0
   gameIsOver = false
   $('#game-board').show(400)
@@ -84,8 +85,9 @@ const pauseBoardWhenGameEnds = function () {
   }
 }
 // game play code to run when a space is clicked
-const onSelectSpace = function (event) {
+const selectSpace = function (event) {
   event.preventDefault()
+  let i
   // first check to make sure a player has not yet won
   if (winningPlayer === '') {
     // check to see if space has been selected
@@ -108,23 +110,26 @@ const onSelectSpace = function (event) {
 
       pauseBoardWhenGameEnds()
       api
-        .selectSpace()
+        .updateGame()
     } else if (this.innerText === '') {
       player = 'O'
       this.innerText = 'O'
       document.getElementById('game-display').innerText = 'Player X, make your move'
       turn++
+      i = $(this).data('index')
       idWinner()
       tieGame()
       pauseBoardWhenGameEnds()
       api
-        .selectSpace()
+        .updateGame(i, $(this).find('p').text(), gameIsOver)
     }
   }
 }
 module.exports = {
   onNewGame,
-  onSelectSpace,
+  selectSpace,
   tieGame,
-  pauseBoardWhenGameEnds
+  pauseBoardWhenGameEnds,
+  gameBoardArray,
+  gameIsOver
 }

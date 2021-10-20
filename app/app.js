@@ -10,7 +10,7 @@ $(() => {
   // resets the game
   $('#new-game').on('click', gameEvents.onNewGame)
   // add event listener to whenever a box is clicked
-  $('.box').on('click', gameEvents.onSelectSpace)
+  $('.box').on('click', gameEvents.selectSpace)
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#sign-out').on('click', authEvents.onSignOut)
