@@ -1,6 +1,6 @@
 SEIRFX-831 Project 1: Tic Tac Toe
 
-For this project i used: git, github, JQuery, AJAX, CSS, Bootstrap, HTML, CURL, Javascript, JSON
+For this project I used: git, github, JQuery, AJAX, CSS, Bootstrap, HTML, CURL, Javascript, JSON
 
 Planning began with a very simple wire-frame. This indicated the functionality of a tic tac toe game which could be played on a laptop, tablet, or cell phone. Functionality included sign-up, sign-in, and sign-out options. 
 
@@ -11,3 +11,7 @@ I then moved to HTML for the post-sign-in view. This included a new-game button 
 Messaging was added to inform players whose turn it is, who has won, or if the game is a tie. 
 
 I then created an event listener for a click on new-game button, which will bring up a new board with a message that it is X's turn. 
+
+There are some unsolved problems. My onSelectSpace function does not show up as a function, but the code executes as designed. I am not sure why this is. I would have liked to develop a minimax algorithm which would allow a user to play against ai. 
+
+User Stories Created Before Development: As a user, I want to sign up and sign in so that I can play tic tac toe. As a user, I want to play tic tac toe against one other player. As a user, I want to complete a game and see a banner declaring what the outcome of the game was so i can know whether or not I won. As a user, I want to be able to start a new game by pressing a new game button. 
