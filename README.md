@@ -8,8 +8,8 @@ For this project I used: git, github, JQuery, AJAX, CSS, Bootstrap, HTML, CURL, 
 
 Planning began with a very simple wire-frame. This indicated the functionality of a tic tac toe game which could be played on a laptop, tablet, or cell phone. Functionality included sign-up, sign-in, and sign-out options. 
 
-![wireframe laptop](https://imgur.com/a/WB9O7oz)
-![wireframe mobile](https://imgur.com/a/uarvGt6)
+https://imgur.com/a/WB9O7oz
+https://imgur.com/a/uarvGt6
 
 I used curl to test the sign-up functionality, creating a user account. I used POST and DELETE API requests for signing up and signing out. I then created HTML code for the sign-up and sign-in buttons, testing the functionality as they were created. 
 
