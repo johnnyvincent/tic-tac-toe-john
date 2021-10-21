@@ -3,11 +3,9 @@
 const store = require('../store')
 
 const signUpSuccess = function (responseData) {
-<<<<<<< HEAD
   $('#sign-up-success').text('Signed up successfully! Please sign in.').fadeOut(3000)
-=======
+
   $('#sign-up-success').text('Signed up successfully!').fadeOut(3000)
->>>>>>> 6251538 (fix sign-up success)
 
   // $('#game-display').removeClass()
   // $('#game-display').addClass('text-success')
