@@ -3,7 +3,7 @@
 const store = require('../store')
 
 const signUpSuccess = function (responseData) {
-  $('#game-display').text('Signed up successfully!')
+  $('#sign-up-success').text('Signed up successfully! Please sign in.').fadeOut(3000)
 
   // $('#game-display').removeClass()
   // $('#game-display').addClass('text-success')
@@ -14,7 +14,7 @@ const signUpSuccess = function (responseData) {
 }
 
 const signUpFailure = function (error) {
-  $('#error-message').text('Sign up failed')
+  $('#error-message').text('Sign up failed, please try again').fadeOut(3000)
 
   $('#error-message').removeClass()
   $('#error-message').addClass('text-danger')
@@ -48,7 +48,7 @@ const signInFailure = function (error) {
 }
 
 const signOutSuccess = function (responseData) {
-  $('#game-display').text('Signed out successfully!')
+  $('#sign-out-success').text('Signed out successfully!').fadeOut(3000)
 
  // $('#game-display').removeClass()
  // $('#game-display').addClass('text-success')
