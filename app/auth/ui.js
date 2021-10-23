@@ -41,7 +41,7 @@ const signInSuccess = function (responseData) {
 }
 
 const signInFailure = function (error) {
-  $('#error-message').text('Sign in failed')
+  $('#error-message').text('Sign in failed').fadeOut(4000)
 
   $('#error-message').removeClass()
   $('#error-message').addClass('text-danger')
