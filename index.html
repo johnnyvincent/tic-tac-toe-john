@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Tic Tac Toe</h1>
+
+      <p id="sign-out-success"></p>
+      <p id="sign-up-success"></p>
+      <p id="error-message"></p>
+
+      <section id="before-sign-in">
+        <form id="sign-up" class="border">
+                <fieldset>
+                  <legend>Sign Up</legend>
+                  <input type="text" name="credentials[email]" placeholder="Email" required>
+                  <input type="password" name="credentials[password]" placeholder="Password" required>
+                  <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+                  <button class="button">Sign Up</button>
+                </fieldset>
+        </form>
+
+        <form id="sign-in" class="border">
+          <fieldset>
+            <legend>Sign In</legend>
+            <input name="credentials[email]" type="text" placeholder="Email" required>
+            <input type="password" name="credentials[password]" placeholder="Password" required>
+            <button class="button">Sign In</button>
+          </fieldset>
+        </form>
+        </section>
+        <div ></div>
+
+
+
+
+
+      <div class="container" id="after-sign-in">
+
+          <!--Element which informs players' whose turn it is-->
+          <p id="game-display"></p>
+          <p id="sign-in-success"></p>
+
+          <div id="game-board">
+            <div data-cell-index="0" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="1" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="2" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="3" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="4" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="5" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="6" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="7" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+            <div data-cell-index="8" class="col-4 col-sm-4 col-lg-4 box alt-color"></div>
+          </div>
+
+
+      <section id="new-game-display"></section>
+
+      <button id="new-game" class="button">New Game</button>
+
+
+      <button id="sign-out" class="button">Sign Out</button>
+
+      </div>
+
+    </body>
+</html>
